@@ -1,0 +1,110 @@
+<!-- Bootstrap CSS -->
+<p></p>
+<!-- Font Awesome CSS -->
+<p></p>
+<!-- Include TimeCircles CSS if needed -->
+<p></p>
+<p></p>
+<!-- jQuery (Load before Bootstrap JS) -->
+<p>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</p>
+<!-- Bootstrap JS -->
+<p>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+</p>
+<!-- Include TimeCircles JS if needed -->
+<p></p>
+<p>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/TimeCircles/1.5.3/TimeCircles.min.js"
+    defer="defer"></script>
+</p>
+<div class="container">
+  <!-- Class Activities Section -->
+  <div class="mb-5">
+    <h4 class="mb-4 text-center">Class Activities</h4>
+
+    <!-- Activity 1: Multiple buttons in a row -->
+    <div class="row mb-4">
+      <div class="col-md-12 text-center">
+        <h5>Activity 1: Download Images</h5>
+        <div class="d-flex justify-content-center flex-wrap">
+          <!-- Button group for Download Image and Copy Icon -->
+          <div class="btn-group mr-2 mb-2" role="group">
+            <a class="btn btn-primary" href="https://santatracker.google.com/speedsketch.html" target="_blank" rel="noopener">Download Image 1</a>
+            <button id="copyButton1" class="btn btn-secondary" title="Copy image link" data-toggle="tooltip">
+              <i class="fa fa-copy"></i>
+            </button>
+          </div>
+          <div class="btn-group mr-2 mb-2" role="group">
+            <a class="btn btn-primary" href="https://example.com/image2" target="_blank" rel="noopener">Download Image 2</a>
+            <button id="copyButton2" class="btn btn-secondary" title="Copy image link" data-toggle="tooltip">
+              <i class="fa fa-copy"></i>
+            </button>
+          </div>
+          <div class="btn-group mr-2 mb-2" role="group">
+            <a class="btn btn-primary" href="https://example.com/image3" target="_blank" rel="noopener">Download Image 3</a>
+            <button id="copyButton3" class="btn btn-secondary" title="Copy image link" data-toggle="tooltip">
+              <i class="fa fa-copy"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity 2: Google Quick Draw -->
+    <div class="row mb-4">
+      <div class="col-md-12 text-center">
+        <h5>Activity 2: Google Quick Draw</h5>
+        <a class="btn btn-primary" href="https://quickdraw.withgoogle.com/" target="_blank" rel="noopener">Play Quick Draw</a>
+      </div>
+    </div>
+
+    <!-- Activity 3: Another activity button -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h5>Activity 3: Mystery Activity</h5>
+        <a class="btn btn-primary" href="https://example.com/mystery" target="_blank" rel="noopener">Go to Activity 3</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Miscellaneous Section -->
+  <div class="mb-3">
+    <h4 class="mb-2 text-center">Miscellaneous</h4>
+    <div class="d-flex flex-column align-items-center"> </div>
+  </div>
+</div>
+
+<script>
+  // Function to copy the image links
+  document.getElementById('copyButton1').addEventListener('click', function() {
+    var imageUrl = 'https://i.natgeofe.com/n/00fc74ba-0b09-454b-b554-67578b87cb5e/43169.jpg';
+    navigator.clipboard.writeText(imageUrl).then(function() {
+        alert('Image link copied to clipboard: ' + imageUrl);
+    }).catch(function(error) {
+        console.error('Failed to copy text: ', error);
+    });
+  });
+
+  document.getElementById('copyButton2').addEventListener('click', function() {
+    var imageUrl = 'https://example.com/image2';
+    navigator.clipboard.writeText(imageUrl).then(function() {
+        alert('Image link copied to clipboard: ' + imageUrl);
+    }).catch(function(error) {
+        console.error('Failed to copy text: ', error);
+    });
+  });
+
+  document.getElementById('copyButton3').addEventListener('click', function() {
+    var imageUrl = 'https://example.com/image3';
+    navigator.clipboard.writeText(imageUrl).then(function() {
+        alert('Image link copied to clipboard: ' + imageUrl);
+    }).catch(function(error) {
+        console.error('Failed to copy text: ', error);
+    });
+  });
+</script>
